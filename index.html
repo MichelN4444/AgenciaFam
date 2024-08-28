@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap"
+		rel="stylesheet"
+	/>
+
+    <link rel="stylesheet" href="./public/bundle.css">
+    <link rel="icon" href="./img/LogoPag.png" type="image/png" />
+    <title>Rutas en familia</title>
+    <script src="./public/bundle.js" defer></script>
+</head>
+<body>
+    <header class="barra_navegacion">
+        <div class="logo_barra">
+            <a href="index.html">
+                <img src="./img/LogoPag.png" alt="logo de la pagina">
+            </a>
+        </div>
+        <nav class="navegador" id="navegador">
+            <a href="./index.html">Inicio</a>
+            <a id="contacto">Contacto</a>    
+            <a id="ubicacion">Ubicación</a>
+        </nav>
+        <button class="menu-toggle" aria-label="Menú de navegación">
+            &#9776;
+        </button>
+    </header>
+    <main>
+        <div class="carrusel" id="carrusel">
+            <h3 class="titulo_foto"></h3>
+            <div class="imagen">
+                <img src="" class="carrusel-imagen" alt="Imagen del carrusel">
+            </div>
+            <button class="anterior" data-accion="anterior-imagen">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                    class="galeria__icono-boton"
+                >
+                    <path
+                        fill-rule="evenodd"
+                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                    />
+                </svg>
+            </button>
+            <button class="siguiente" data-accion="siguiente-imagen">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                    class="galeria__icono-boton"
+                >
+                    <path
+                        fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                    />
+                </svg>
+            </button>
+        </div>
+        <div class="informacion">
+            <h1 class="titulo_bienvenida" id="titulo">BIENVENIDO</h1>
+            <div class="quienes_somos">
+                <h2 class="subtitulos_quienes_somos">¿Quiénes somos?</h2>
+                <p class="info" id="info">Hola, somos una familia mexicana como muchas que ama su país y ofrecemos paseos acompañados con servicio de transporte ejecutivo a cualquier parte turística de la Ciudad de México y del área metropolitana en fines de semana al mejor costo.</p>    
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="info">
+                <ul>
+                    <li>
+                        <h3 class="titulos_footer">Nosotros</h3>
+                        <div class="enlaces">
+                            <ul><li><a href="#">Quiénes somos</a></li></ul>
+                            <ul><li><a href="#">Nuestro equipo</a></li></ul>
+                            <ul><li><a href="#">Carreras</a></li></ul>
+                        </div>
+                    </li>
+                    <li>
+                        <h3 class="titulos_footer">Contacto</h3>
+                        <div class="enlaces">
+                            <ul><li><a href="#">Soporte</a></li></ul>
+                            <ul><li><a href="#">Ubicación</a></li></ul>
+                            <ul><li><a href="#">Consultas</a></li></ul>
+                        </div>
+                    </li>
+                    <li>
+                        <h3 class="titulos_footer">Información</h3>
+                        <div class="enlaces">
+                            <ul><li><a href="#">Términos de uso</a></li></ul>
+                            <ul><li><a href="#">Política de privacidad</a></li></ul>
+                            <ul><li><a href="#">Cookies</a></li></ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

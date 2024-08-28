@@ -1,0 +1,171 @@
+@use 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ECF0F1;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.barra_navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #A0522D;
+    color: #FFDEAD;
+    height: 90px;
+}
+
+.navegador {
+    display: flex;
+    gap: 20px;
+}
+
+.navegador a {
+    color: aliceblue;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo_barra img {
+    height: 70px;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.carrusel {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carrusel img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+button {
+    background: rgba(128, 128, 128, 0.589);
+    border-radius: 10%;
+    border: none;
+    color: black;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.anterior {
+    left: 10px;
+}
+
+.siguiente {
+    right: 10px;
+}
+
+.informacion {
+    margin-top: 5%;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.footer {
+    background-color: rgb(173, 173, 173);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.footer .info {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer .info ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+}
+
+.titulos_footer {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.enlaces li {
+    margin-bottom: 10px;
+}
+
+.enlaces a {
+    text-decoration: none;
+    color: #000;
+}
+
+.enlaces a:hover {
+    color: #007bff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navegador {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #A0522D;
+        width: 100%;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-toggle.active + .navegador {
+        display: flex;
+    }
+
+    .logo_barra img {
+        height: 50px;
+    }
+
+    .anterior, .siguiente {
+        width: 40px;
+        height: 40px;
+    }
+
+    .informacion {
+        width: 100%;
+    }
+
+    .footer .info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .info ul {
+        margin: 0;
+    }
+}
